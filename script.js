@@ -1,4 +1,13 @@
 // script.js
+
+const waves = document.querySelectorAll('.wave');
+
+// Trigger the animation after a delay
+setTimeout(() => {
+  waves.forEach(wave => {
+    wave.style.animationPlayState = 'running';
+  });
+}, 2000); // Adjust the delay as needed
 const daysElement = document.getElementById('days');
 const hoursElement = document.getElementById('hours');
 const minutesElement = document.getElementById('minutes');
